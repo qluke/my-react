@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-import MeetupList from '../components/meetups/MeetupList';
+import MeetupList from "../components/meetups/MeetupList";
 
 const DUMMY_DATA = [
   {
@@ -30,13 +30,17 @@ const DUMMY_DATA = [
 // 最终 AllMeetupsPage 组件的作用是展示所有的meetup列表。
 
 function AllMeetupsPage() {
+  // 解释这段代码的作用：
+
+  // 该组件使用了React Hooks中的useState和useEffect。useState用于创建两个状态变量：isLoading和loadedMeetups，它们分别用于跟踪数据是否正在加载和从服务器加载的Meetup数据。
+  // useEffect用于在组件挂载时执行一次异步操作。在这个例子中，异步操作是从服务器获取Meetup数据。如果成功获取数据，将对数据进行转换，然后将其存储在loadedMeetups状态变量中。如果发生错误，则在控制台打印错误消息。
   const [isLoading, setIsLoading] = useState(true);
   const [loadedMeetups, setLoadedMeetups] = useState([]);
   useEffect(() => {
     setIsLoading(true);
     fetch(
       // 'https://react-getting-started-48dec-default-rtdb.firebaseio.com/meetups.json'
-      'http://localhost:8080/meetups.json',
+      "http://localhost:8080/meetups.json"
     )
       .then((response) => {
         return response.json();
@@ -47,7 +51,7 @@ function AllMeetupsPage() {
         for (const key in data) {
           const meetup = {
             id: key,
-            ...data[key]
+            ...data[key],
           };
 
           meetups.push(meetup);

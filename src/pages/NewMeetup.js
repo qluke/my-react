@@ -7,7 +7,7 @@ import NewMeetupForm from '../components/meetups/NewMeetupForm';
 // 解决方式：v6开始 useNavigate取代了原先版本中的useHistory 
 
 function NewMeetupPage() {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   function addMeetupHandler(meetupData) {
     fetch(
@@ -20,7 +20,7 @@ function NewMeetupPage() {
         },
       }
     ).then(() => {
-      history.replace('/');
+      navigate('/'); 
     });
   }
 

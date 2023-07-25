@@ -4,17 +4,23 @@
 
 参考自：https://github.com/mschwarzmueller/nextjs-course-code
 
-| 分支名             | 参考自               |
+| 项目分支名           | 参考的项目分支名          |
 | ------------------ | -------------------- |
 | 01-react-todo-demo | zz-react-summary     |
 | 02-react-project   | zz-prj-react-summary |
-|                    |                      |
+| 03-file-based-routing |  02-file-based-routing |
+| 04-routing-project | 03-prj-routing        |
+| 05-data-fetching | 04-data-fetching|
+| 06-data-fetching-project | 05-prj-data-fetching |
 
 ### Udemy高分付费课程
 
 标题：Next.js & React - The Complete Guide (incl. Two Paths!)
+
 网站：https://www.udemy.com/course/nextjs-react-the-complete-guide/ 
+
 作者：Maximilian Schwarzmüller
+
 B站：https://www.bilibili.com/read/cv20992052 
 
 
@@ -26,7 +32,9 @@ B站：https://www.bilibili.com/read/cv20992052
 - Next.js 的优势有以下三点：
 
 内置服务端渲染 Server-side Page Rendering
+
 基于文件的路由 File-based Routing
+
 拥有全栈的能力  Build Fullstack React 
 
 - 课程大纲 About This Course

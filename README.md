@@ -12,6 +12,13 @@
 | 04-routing-project | 03-prj-routing        |
 | 05-data-fetching | 04-data-fetching|
 | 06-data-fetching-project | 05-prj-data-fetching |
+| 06-optimizations | 06-optimizations |
+| 07-api-routes | 07-api-routes |  
+| 08-api-route-project | 08-prj-api-routes |
+| 09-context | 09-context |
+| 10-blog-project | 10-prj-blog |
+| 11-deployment | 11-deployment |
+| 12-auth | 12-auth |
 
 ### Udemy高分付费课程
 
